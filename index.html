@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+</head>
+<body>
+    <div class="Add User">
+        <h1>Add User</h1>
+        <form >
+            <label>Name
+                <input type="text" name="name">
+            </label>
+            <br>
+            <br>
+            <label>Surname
+                <input required type="text" id="Surname" name="Surname">
+            </label>
+            <br>
+            <br>
+            <label>Email
+                <input required type="email" id="email" placeholder="John@gmail.com" name="email">
+            </label>
+            <br>
+            <br>
+            <label for="Status">Status:</label>
+
+<select name="Status" id="Status">
+  <option value="">--Please choose an option--</option>
+  <option value="Student">Student</option>
+  <option value="Instructor">Instructor</option>
+  <option value="Guest">Guest</option>
+</select>
+
+<p><strong>Choose your Favourite programming language</strong></p>
+<label for="category">Choose a programming language:</label>
+<input type="radio" id="CSS" name="category" value="CSS">
+<label for="CSS">CSS</label>
+<input type="radio" id="HTML" name="category" value="HTML">
+<label for="HTML">HTML</label>
+<input type="radio" id="Javascript" name="category" value="Javascript">
+<label for="Javascript">Javascript</label>
+<br>
+<br>
+<label for="comment">Comment:</label><br>
+  <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Write Comment"></textarea><br><br>
+  <br>
+  <label for="start"><strong>Current Date:</strong></label>
+<input type="date" id="start" name="Current date" value="2023-07-25" min="1950-01-01" max="2024-12-31" />
+<br>
+<br>
+<div>
+    <input type="checkbox" id="sign up" name="sign up" checked />
+    <label for="scales">Sign up for the newsletter</label>
+  </div>
+
+  <div>
+    <input type="checkbox" id="Agree" name="agree" />
+    <label for="agree">Agree to terms and conditions</label>
+  </div>
+  <Button type="submit">Submit</Button>
+        </form>
+    </div>
+</body>
+</html>
